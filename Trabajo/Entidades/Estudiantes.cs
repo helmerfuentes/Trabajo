@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Estudiantes
-    {
-        
+    class Estudiantes { 
+
+
+        public int idEstudiante{
+           get; set;
+        }
+        public int idPrograma
+        {
+            get; set;
+        }
+
         public string identificacion{
             get; set;
         }
+
 
         public string nombre
         {
@@ -21,5 +30,7 @@ namespace Entidades
         public char estadoFinanciero {
             get;set;
         }
+       
+
     }
 }
