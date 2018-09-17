@@ -8,5 +8,14 @@ namespace Entidades
 {
     class Matricula
     {
+        public int codigoMatricula {
+            get;set;
+        }
+        public int codigoEstudiante {
+            get;set;
+        }
+        public int codigoAsignatura {
+            set;get;
+        }
     }
 }

@@ -8,7 +8,6 @@ namespace Entidades
 {
     class Estudiantes { 
 
-
         public int idEstudiante{
            get; set;
         }
@@ -20,14 +19,16 @@ namespace Entidades
         public string identificacion{
             get; set;
         }
-
-
         public string nombre
         {
             get; set;
         }
         
         public char estadoFinanciero {
+            get;set;
+        }
+
+        public int periodoAcademico {
             get;set;
         }
        
