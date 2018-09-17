@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace presentacion
+namespace Entidades
 {
-    class Estjnjdjksjde
+    class Matricula
     {
-        kjdfjjnsjfhjd
     }
 }
