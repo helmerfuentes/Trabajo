@@ -30,7 +30,7 @@ namespace presentacion
                 valido = logEst.validarEstudiante(txtIdentificacion.Text);
                 if (!valido.Equals("Existe"))
                 {
-                    MessageBox.Show("El Estudiante no existe.");
+                    MessageBox.Show("El Estudiante no existe..");
                 }
             }
             else
