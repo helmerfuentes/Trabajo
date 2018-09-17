@@ -16,5 +16,10 @@ namespace presentacion
         {
             InitializeComponent();
         }
+
+        private void btnMatricular_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

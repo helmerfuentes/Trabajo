@@ -1,12 +1,3 @@
-﻿# Host: localhost  (Version 5.5.5-10.1.31-MariaDB)
-# Date: 2018-09-17 14:29:24
-# Generator: MySQL-Front 6.0  (Build 4.0)
-
-
-#
-# Structure for table "estudiantes"
-#
-
 DROP TABLE IF EXISTS `estudiantes`;
 CREATE TABLE `estudiantes` (
   `idestudiante` int(11) NOT NULL AUTO_INCREMENT,
