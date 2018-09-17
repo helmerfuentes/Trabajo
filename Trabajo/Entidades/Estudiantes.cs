@@ -8,5 +8,18 @@ namespace Entidades
 {
     class Estudiantes
     {
+        
+        public string identificacion{
+            get; set;
+        }
+
+        public string nombre
+        {
+            get; set;
+        }
+        
+        public char estadoFinanciero {
+            get;set;
+        }
     }
 }
