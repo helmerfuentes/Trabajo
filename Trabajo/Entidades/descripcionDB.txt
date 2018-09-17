@@ -1,0 +1,14 @@
+﻿ESTUDIANTES
+
+idestudiantes (INT)
+idprogramas (INT(11))
+identificacion (VARCHAR(12))
+nombre VARCHAR(50)
+
+
+ASIGNATURAS
+
+idasignaturas (INT)
+idprogramas (INT(11))
+codigo VARCHAR(5)
+nombre VARCHAR(30)
