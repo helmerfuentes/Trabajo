@@ -8,6 +8,5 @@ namespace Entidades
 {
     class Grupo
     {
-         
     }
 }

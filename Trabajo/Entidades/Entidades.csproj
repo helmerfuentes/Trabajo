@@ -74,7 +74,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="descripcionDB.txt" />
+    <Content Include="BD\MySql.Data.dll" />
+    <Content Include="BD\tarea.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
