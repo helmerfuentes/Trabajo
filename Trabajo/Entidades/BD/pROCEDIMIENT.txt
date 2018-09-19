@@ -1,0 +1,7 @@
+//BUSCAR ESTUDIANTES
+create or replace procedure buscarEstudiante(xidentificacion varchar(12))
+
+begin
+
+select *from estudiantes where identificacion=xidentificacion;
+end;
