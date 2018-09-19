@@ -15,6 +15,7 @@ namespace presentacion
     {
         LogicaEstudiante logEst = new LogicaEstudiante();
         LogicaMatricula logMatr = new LogicaMatricula();
+        LogicaGrupo logGrupo = new LogicaGrupo();
              
         public Form1()
         {
@@ -35,7 +36,10 @@ namespace presentacion
                         valido = logMatr.asignaturaSeleccionada(txtAsignatura.Text, txtIdentificacion.Text);
                         if (valido.Equals("No existe"))
                         {
-                            valido = 
+                            if (txtGrupo.Text.Length <=2 && int.TryParse(txtGrupo.Text, out numero))
+                            {
+                                valido = logGrupo.disponibilidad(int.Parse(txtGrupo.Text));
+                            }
                         }
                     } 
                 }

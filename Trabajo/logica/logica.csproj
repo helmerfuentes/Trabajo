@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="LogicaAsignatura.cs" />
     <Compile Include="LogicaEstudiante.cs" />
+    <Compile Include="LogicaGrupo.cs" />
     <Compile Include="LogicaMatricula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
