@@ -5,3 +5,9 @@ begin
 
 select *from estudiantes where identificacion=xidentificacion;
 end;
+
+
+CREATE PROCEDURE `buscarAsignaturaMatriculada`(cedulaEstudiante varchar(12), codigoAsignatura varchar(5))
+BEGIN
+select * from matriculas where idestudiante = (select idestudiante from estudiantes where identificacion = cedulaEstudiante) and idgrupo = (select idgrupo from grupos gr inner join asignaturas a on gr.idasignatura = (select idasignatura from asignaturas where codigo = codigoAsignatura))
+END
