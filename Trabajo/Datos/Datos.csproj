@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4BD4F889-6587-4D13-88A0-0A61370FB9DE}</ProjectGuid>
+    <ProjectGuid>{7F2508B0-4886-416D-953E-CE5F6ED2A3E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Datos</RootNamespace>
@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Documentos\v4.5.2\MySql.Data.dll</HintPath>
+      <HintPath>E:\Escritotio\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,10 +46,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="DatosEstudiante.cs" />
-<<<<<<< HEAD
     <Compile Include="DatosMatricula.cs" />
-=======
->>>>>>> 108c8ee45271c7fe56f7fa62ab14f846d785a68c
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
