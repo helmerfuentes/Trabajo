@@ -40,13 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="LogicaAsignatura.cs" />
-    <Compile Include="LogicaEstudiantes.cs" />
-    <Compile Include="LogicaGrupo.cs" />
-    <Compile Include="LogicaHorario.cs" />
+    <Compile Include="LogicaEstudiante.cs" />
     <Compile Include="LogicaMatricula.cs" />
-    <Compile Include="LogicaPrograma.cs" />
+=======
+    <Compile Include="LogicaEstudiante.cs" />
+>>>>>>> 108c8ee45271c7fe56f7fa62ab14f846d785a68c
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\CapaDatos.csproj">
+      <Project>{4bd4f889-6587-4d13-88a0-0a61370fb9de}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{ed506b28-84be-4f4c-9f41-b705f26fd7c0}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

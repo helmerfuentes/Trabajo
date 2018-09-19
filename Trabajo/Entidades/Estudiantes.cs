@@ -6,31 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Estudiantes { 
-
-
-        public int idEstudiante{
-           get; set;
-        }
-        public int idPrograma
-        {
-            get; set;
-        }
-
-        public string identificacion{
-            get; set;
-        }
-
-
-        public string nombre
-        {
-            get; set;
-        }
-        
-        public char estadoFinanciero {
-            get;set;
-        }
-       
-
+    class Estudiantes
+    {
     }
 }

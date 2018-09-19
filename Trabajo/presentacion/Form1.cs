@@ -16,5 +16,23 @@ namespace presentacion
         {
             InitializeComponent();
         }
+
+        private void btnMatricular_Click(object sender, EventArgs e)
+        {
+            int numero;
+            String valido = "";
+            if (txtIdentificacion.Text.Length >= 8 && txtIdentificacion.Text.Length <= 12 && int.TryParse(txtIdentificacion.Text, out numero))
+            {
+                valido = logEst.validarEstudiante(txtIdentificacion.Text);
+                if (!valido.Equals("Existe"))
+                {
+                    MessageBox.Show("El Estudiante no existe..");
+                }
+            }
+            else
+            {
+                
+            }
+        }
     }
 }
