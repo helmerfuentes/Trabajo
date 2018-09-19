@@ -11,9 +11,9 @@ namespace logica
     public class LogicaEstudiante
     {
 
-        Datos.DatosEstudiante estudiante = new DatosEstudiante();
+        DatosEstudiante estudiante = new DatosEstudiante();
 
-        public String identificacion(String identificacion)
+        public String buscarIdentificacion(String identificacion)
         {
             DataTable table = new DataTable();
             table = estudiante.buscarEstudiante(identificacion);
