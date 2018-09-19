@@ -11,3 +11,11 @@ CREATE PROCEDURE `buscarAsignaturaMatriculada`(cedulaEstudiante varchar(12), cod
 BEGIN
 select * from matriculas where idestudiante = (select idestudiante from estudiantes where identificacion = cedulaEstudiante) and idgrupo = (select idgrupo from grupos gr inner join asignaturas a on gr.idasignatura = (select idasignatura from asignaturas where codigo = codigoAsignatura))
 END
+
+//Buscar si existe la materia
+create or replace procedure buscarMateria(codigoMateria varchar(12))
+
+begin
+
+select * from asignaturas where codigo=codigoMateria;
+end;

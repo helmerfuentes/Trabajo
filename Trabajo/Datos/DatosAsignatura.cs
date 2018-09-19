@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class DatosMatricula: Conexion
+    public class DatosAsignatura:Conexion
     {
         public MySqlCommand cmd;
 
-        public DataTable buscarAsignatura(String asignatura,string identificacion)
+        public DataTable buscarAsignatura(String codigoAsignatura)
         {
             try
             {
                 if (conectar())
                 {
-                    cmd = new MySqlCommand("buscarAsignaturaMatriculada");
+                    cmd = new MySqlCommand("buscarAsignatura");
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = connection;
-                    cmd.Parameters.Add(new MySqlParameter("codigoAsignatura",asignatura));
-                    cmd.Parameters.Add(new MySqlParameter("cedulaEstudiante", identificacion));
+                    cmd.Parameters.Add(new MySqlParameter("codigoAsignatuera", codigoAsignatura));
+
                     int i = cmd.ExecuteNonQuery();
 
                     if (cmd.ExecuteNonQuery() >= 0)

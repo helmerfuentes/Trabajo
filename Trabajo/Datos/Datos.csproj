@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="DatosAsignatura.cs" />
     <Compile Include="DatosEstudiante.cs" />
     <Compile Include="DatosMatricula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
