@@ -34,5 +34,10 @@ namespace presentacion
                 
             }
         }
+
+        private void txtAsignatura_Leave(object sender, EventArgs e)
+        {
+             
+        }
     }
 }

@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.identi = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAsignatura = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtGrupo = new System.Windows.Forms.TextBox();
             this.btnMatricular = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtIdentificacion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(224, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 27);
-            this.textBox1.TabIndex = 0;
+            this.txtIdentificacion.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdentificacion.Location = new System.Drawing.Point(224, 59);
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(161, 27);
+            this.txtIdentificacion.TabIndex = 0;
             // 
             // identi
             // 
@@ -71,13 +71,14 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "ASIGNATURA";
             // 
-            // textBox2
+            // txtAsignatura
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(224, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 27);
-            this.textBox2.TabIndex = 2;
+            this.txtAsignatura.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAsignatura.Location = new System.Drawing.Point(224, 104);
+            this.txtAsignatura.Name = "txtAsignatura";
+            this.txtAsignatura.Size = new System.Drawing.Size(161, 27);
+            this.txtAsignatura.TabIndex = 2;
+            this.txtAsignatura.Leave += new System.EventHandler(this.txtAsignatura_Leave);
             // 
             // label2
             // 
@@ -91,13 +92,13 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "GRUPO";
             // 
-            // textBox3
+            // txtGrupo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(224, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(161, 27);
-            this.textBox3.TabIndex = 4;
+            this.txtGrupo.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrupo.Location = new System.Drawing.Point(224, 149);
+            this.txtGrupo.Name = "txtGrupo";
+            this.txtGrupo.Size = new System.Drawing.Size(161, 27);
+            this.txtGrupo.TabIndex = 4;
             // 
             // btnMatricular
             // 
@@ -119,9 +120,9 @@
             this.groupBox1.BackColor = System.Drawing.Color.DimGray;
             this.groupBox1.Controls.Add(this.identi);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtIdentificacion);
+            this.groupBox1.Controls.Add(this.txtGrupo);
+            this.groupBox1.Controls.Add(this.txtAsignatura);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -149,12 +150,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Label identi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAsignatura;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtGrupo;
         private System.Windows.Forms.Button btnMatricular;
         private System.Windows.Forms.GroupBox groupBox1;
     }

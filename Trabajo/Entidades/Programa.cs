@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Programa
-    {
+    class Programa {
+        public int idPrograma {
+            get; set;
+        }
+        public string nombrePrograma{
+            get;set;
+        }
     }
+    
+
 }

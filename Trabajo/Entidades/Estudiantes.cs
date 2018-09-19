@@ -8,5 +8,17 @@ namespace Entidades
 {
     class Estudiantes
     {
+        public int idEstudiante {
+            get; set;
+        }
+        public int idPrograma {
+            get; set;
+        }
+        public string cedulaEstudiante {
+            get; set;
+        }
+        public string nombreEstudiante{
+            get;set;
+        }
     }
 }

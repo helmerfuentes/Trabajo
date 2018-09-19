@@ -8,5 +8,23 @@ namespace Entidades
 {
     class Horario
     {
+        public int idHorarios {
+            get;set;
+        }
+        public int idGrupo
+        {
+            get; set;
+        }
+
+        public string dia {
+            get;set;
+        }
+        public DateTime horarioInicio {
+            get;set;
+        }
+        public DateTime horarioFinal {
+            get;set;
+        }
+
     }
 }
