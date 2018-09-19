@@ -46,6 +46,10 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="DatosEstudiante.cs" />
+<<<<<<< HEAD
+    <Compile Include="DatosMatricula.cs" />
+=======
+>>>>>>> 108c8ee45271c7fe56f7fa62ab14f846d785a68c
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

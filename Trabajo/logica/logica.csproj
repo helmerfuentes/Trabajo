@@ -40,7 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="LogicaAsignatura.cs" />
     <Compile Include="LogicaEstudiante.cs" />
+    <Compile Include="LogicaMatricula.cs" />
+=======
+    <Compile Include="LogicaEstudiante.cs" />
+>>>>>>> 108c8ee45271c7fe56f7fa62ab14f846d785a68c
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
