@@ -78,7 +78,6 @@
             this.txtAsignatura.Name = "txtAsignatura";
             this.txtAsignatura.Size = new System.Drawing.Size(161, 27);
             this.txtAsignatura.TabIndex = 2;
-            this.txtAsignatura.Leave += new System.EventHandler(this.txtAsignatura_Leave);
             // 
             // label2
             // 

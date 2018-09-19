@@ -13,7 +13,7 @@ namespace logica
 
         DatosEstudiante estudiante = new DatosEstudiante();
 
-        public String buscarIdentificacion(String identificacion)
+        public String validarIdentificacion(String identificacion)
         {
             DataTable table = new DataTable();
             table = estudiante.buscarEstudiante(identificacion);

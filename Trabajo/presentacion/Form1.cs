@@ -13,7 +13,8 @@ namespace presentacion
 {
     public partial class Form1 : Form
     {
-        LogicaEstudiante logEst = new LogicaEstudiante();        
+        LogicaEstudiante logEst = new LogicaEstudiante();
+             
         public Form1()
         {
             InitializeComponent();
@@ -23,23 +24,26 @@ namespace presentacion
         {
             int numero;
             String valido = "";
+            bool correcto = true;
             if (txtIdentificacion.Text.Length >= 8 && txtIdentificacion.Text.Length <= 12 && int.TryParse(txtIdentificacion.Text, out numero))
             {
-                valido = logEst.buscarIdentificacion(txtIdentificacion.Text);
-                if (!valido.Equals("Existe"))
+                valido = logEst.validarIdentificacion(txtIdentificacion.Text);
+                if (!valido.Equals("No existe"))
                 {
-                    MessageBox.Show("El Estudiante no existe..");
+                    MessageBox.Show("El Estudiante no existe.");
+                    correcto = false;
                 }
             }
             else
             {
-                
+                MessageBox.Show("Formato de identificación no válido.");
+                correcto = false;
             }
-        }
 
-        private void txtAsignatura_Leave(object sender, EventArgs e)
-        {
-             
+            if (correcto)
+            {
+
+            }
         }
     }
 }
