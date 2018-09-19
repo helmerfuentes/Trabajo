@@ -8,7 +8,7 @@ using Datos;
 
 namespace logica
 {
-    class LogicaMatricula
+    public class LogicaMatricula
     {
 
         DatosMatricula matricula = new DatosMatricula();
